@@ -1,11 +1,16 @@
 'use strict';
 
 function Thermostat() {
-    this.MINIMUM_TEMPERATURE = 10
+    this.MINIMUM_TEMPERATURE = 10;
     this.temperature = 20;
+    this.powerSavingMode = true;
 }
 Thermostat.prototype.getCurrentTemperature = function() {
     return this.temperature;
+}
+
+Thermostat.prototype.isPowerSavingModeOn = function() {
+    return this.powerSavingMode === true;
 }
 
 Thermostat.prototype.up = function() {
