@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel='stylesheet'href='style.css'></link>
     <head>
-        <title>Thermostat</title>
+        <title>Thermostat </title>
+        <h1 id="welcomeSign">Welcome to Novotel Mexico ! </h1>
     </head>
-    <body>
+    <body id="mainBody">
         <section>
+        </section>
+          <section>
+          <img class="imageClass" id="mexico" src="mexico.png" alt="Mehico">
+          <h2> Your room temperature is: </h2>
             <h1 id="temperature"></h1>
             <p>
-                <button id="temperature-up">+</button>
-                <button id="temperature-down">-</button>
-                <button id="temperature-reset">reset</button>
+                <button class="buttonClass" id="temperature-up">+</button>
+                <button class="buttonClass" id="temperature-down">-</button>
+                <button class="buttonClass" id="temperature-reset">reset</button>
                 power saving mode is <span id="power-saving">on</span>
-                <button id="powersaving-on">PSM on</button>
-                <button id="powersaving-off">PSM off</button>
+                <button class="buttonClass" id="powersaving-on"></button>
+                <button class="buttonClass" id="powersaving-off"></button>
             </p>
         </section>
         <script src="src/thermostat.js"></script>
